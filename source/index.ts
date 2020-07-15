@@ -456,7 +456,6 @@ class Conf<T extends Record<string, any> = Record<string, unknown>> implements I
 				// Fix for https://github.com/sindresorhus/electron-store/issues/106
 				// Sometimes on Windows, we will get an EXDEV error when atomic writing
 				// (even though to the same directory), so we fall back to non atomic write
-				console.log(`CATCH::_write:${String(error.code)}`);
 				if (error.code === 'EXDEV' || error.code === 'EPERM') {
 					fs.writeFileSync(this.path, data);
 					return;
