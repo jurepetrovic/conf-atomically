@@ -1,6 +1,6 @@
 {
 	"name": "conf-atomically",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Simple config handling for your app or module with atomically",
 	"license": "MIT",
 	"repository": "jurepetrovic/conf-atomically",
